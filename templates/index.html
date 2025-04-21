@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercise Counter</h1>
+        <div class="button-container">
+            <a href="{{ url_for('launch_exercise', exercise='curl') }}" class="button">
+                Launch Curl Counter
+            </a>
+            <a href="{{ url_for('launch_exercise', exercise='deadlift') }}" class="button">
+                Launch Deadlift Counter
+            </a>
+        </div>
+    </div>
+</body>
+</html>
